@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonDevisor
+namespace CommonDivisor
 {
     class Program
     {
-        public static bool CommonDevisor(int x, int y, out int least, out int greatest)
+        public static bool CommonDivisor(int x, int y, out int least, out int greatest)
         {
             int max = x < y ? x : y;
             bool first = true;
@@ -36,14 +36,14 @@ namespace CommonDevisor
             Console.Write("Enter y: ");
             int lcd, gcd;
             int y = int.Parse(Console.ReadLine());
-            if(CommonDevisor(x, y, out lcd, out gcd ))
+            if(CommonDivisor(x, y, out lcd, out gcd ))
             {
-                Console.WriteLine("Least common devisor of {0} and {1} is {2}", x, y, lcd);
-                Console.WriteLine("Greatest common devisor of {0} and {1} is {2}", x, y, gcd);
+                Console.WriteLine("Least common divisor of {0} and {1} is {2}", x, y, lcd);
+                Console.WriteLine("Greatest common divisor of {0} and {1} is {2}", x, y, gcd);
             }
             else
             {
-                Console.WriteLine("No common devisor of {0} and {1}", x, y);
+                Console.WriteLine("No common divisor of {0} and {1}", x, y);
             }
         }
     }
